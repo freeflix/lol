@@ -7,12 +7,12 @@
 
 button{
     position:absolute;
-    top:10px;
-    left:10px;
+    top:60px;
+    left:60px;
 }
 </style>
 <body>
-<h1>CLICK ME</H1>
+<button>CLICK ME</button>
 
 
 
@@ -21,7 +21,7 @@ button{
 
 
 $(function(){
-    $("h1").on({
+    $("button").on({
         mouseover:function(){
             $(this).css({
                 left:(Math.random()*200)+"px",
