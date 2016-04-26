@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"><script>
+</head>
+<style>
+
+button{
+    position:absolute;
+    top:10px;
+    left:10px;
+}
+</style>
+<body>
+<h1>CLICK ME</H1>
+
+
+
+
+<script>
+
+
+$(function(){
+    $("h1").on({
+        mouseover:function(){
+            $(this).css({
+                left:(Math.random()*200)+"px",
+                top:(Math.random()*200)+"px",
+            });
+        }
+    });
+});
+</script>
+
+</body>
+</html>
